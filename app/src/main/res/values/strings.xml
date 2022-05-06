@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">7 Minutes Workout</string>
+    <string name="start">Start</string>
+    <string name="exercise_list">List of exercises</string>
+    <string name="finish_prompt">You have completed the workout!</string>
+    <string name="finish">Finish</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="this_will_stop_workout">This will stop your workout. Are you sure want to quit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="weight">Weight (in kg)</string>
+    <string name="height">Height (in cm)</string>
+    <string name="your_bmi">Your BMI</string>
+    <string name="underweight">Underweight</string>
+    <string name="overweight">Overweight</string>
+    <string name="healthy">Healthy</string>
+    <string name="obese">Obese</string>
+    <string name="extreme_obese">Extremely Obese</string>
+    <string name="extreme_underweight">Extremely Underweight</string>
+    <string name="severe_overweight">Severely Obese</string>
+    <string name="underweight_a">Please eat a little bit more!</string>
+    <string name="overweight_a">Please control your weight by exercising and dieting</string>
+    <string name="healthy_a">You are good to go!</string>
+    <string name="obese_a">Please exercise regularly and go on a strict diet</string>
+    <string name="extreme_obese_a">Please seek treatment and follow doctor advice</string>
+    <string name="extreme_underweight_a">Please seek treatment and follow doctor advice</string>
+    <string name="severe_overweight_a">Please seek treatment immediately and follow doctor advice</string>
+    <string name="calculate">Calculate</string>
+    <string name="na">N/A</string>
+    <string name="na_a">Please try again</string>
+</resources>

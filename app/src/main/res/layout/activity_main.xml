@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/start_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/border_ripple_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textAllCaps="true"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exerciseListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/dark_spring"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:shadowRadius="8"
+        android:width="240dp"
+        android:text="@string/exercise_list"
+        app:cornerRadius="8sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bmiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/dark_spring"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:shadowRadius="8"
+        android:width="240dp"
+        android:text="@string/bmi_calculator"
+        app:cornerRadius="8sp" />
+
+</LinearLayout>
