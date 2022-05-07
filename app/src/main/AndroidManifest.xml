@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Workout_app">
         <activity
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.bmi.BMIActivity"
             android:exported="false" />
         <activity

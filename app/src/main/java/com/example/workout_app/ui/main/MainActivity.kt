@@ -8,6 +8,7 @@ import com.example.workout_app.databinding.ActivityMainBinding.*
 import com.example.workout_app.ui.bmi.BMIActivity
 import com.example.workout_app.ui.exercise.ExerciseActivity
 import com.example.workout_app.ui.exercise_list.ExerciseListActivity
+import com.example.workout_app.ui.history.HistoryActivity
 
 class MainActivity : AppCompatActivity() {
     private var activityMainBinding: ActivityMainBinding? = null
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
                 goToBmiCalculator()
             }
         }
+        activityMainBinding?.historyButton?.let { it ->
+            it.setOnClickListener {
+                goToHistory()
+            }
+        }
     }
 
     private fun goToExercise() {
@@ -50,6 +56,11 @@ class MainActivity : AppCompatActivity() {
     private fun goToBmiCalculator() {
         val bmiIntent = Intent(this, BMIActivity::class.java)
         startActivity(bmiIntent)
+    }
+
+    private fun goToHistory() {
+        val historyIntent = Intent(this, HistoryActivity::class.java)
+        startActivity(historyIntent)
     }
 
     override fun onDestroy() {

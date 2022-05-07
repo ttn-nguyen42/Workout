@@ -17,11 +17,39 @@ class BmiViewModel : ViewModel() {
     var heightIndex: Double? = null
     var bmiIndex: Double? = null
 
+    var isMetric: Boolean = true
+
     fun calculateBmi() {
-        bmiIndex = if (weightIndex != null && heightIndex != null) {
-            weightIndex!! / (heightIndex!! * heightIndex!!)
+        if (isMetric) {
+            bmiIndex = if ((weightIndex != null && weightIndex!! > 0) && (heightIndex != null && weightIndex!! > 0)) {
+                weightIndex!! / ((heightIndex!! / 100.0) * (heightIndex!! / 100.0))
+            } else {
+                null
+            }
         } else {
-            null
+            bmiIndex = if ((weightIndex != null && weightIndex!! > 0) && (heightIndex != null && weightIndex!! > 0)) {
+                (weightIndex!! * 703) / ((heightIndex!! * 12) * (heightIndex!! * 12))
+            } else {
+                null
+            }
+        }
+    }
+
+    fun fromMetricToEmpirical() {
+        if (weightIndex != null) {
+            weightIndex = weightIndex?.times(2.205)
+        }
+        if (heightIndex != null) {
+            heightIndex = heightIndex?.div(30.48)
+        }
+    }
+
+    fun fromEmpiricalToMetric() {
+        if (weightIndex != null) {
+            weightIndex = weightIndex?.div(2.205)
+        }
+        if (heightIndex != null) {
+            heightIndex = heightIndex?.times(30.48)
         }
     }
 

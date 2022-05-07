@@ -75,7 +75,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun init() {
-        viewModel = ViewModelProvider(this, InjectorUtils.provideExerciseViewModelFactory()).get(
+        viewModel = ViewModelProvider(this, InjectorUtils.provideExerciseViewModelFactory(this)).get(
             ExerciseViewModel::class.java
         )
         viewModel?.fillUpExercises()
@@ -196,6 +196,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {
+                viewModel!!.numberOfFinishedExercises += 1
                 viewModel?.setExerciseAsCompleted(viewModel?.getCurrentExercise()?.value!!)
                 exerciseAdapter?.notifyItemChanged(viewModel?.getCurrentExercise()?.value!!)
                 if (viewModel?.getCurrentExercise()?.value!! >= viewModel?.getExercises()?.value?.size!!) {
@@ -222,6 +223,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         customDialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         dialogBinding.confirmationYes.setOnClickListener {
             customDialog.dismiss()
+            viewModel?.addHistory()
             finish()
         }
         dialogBinding.confirmationNo.setOnClickListener {

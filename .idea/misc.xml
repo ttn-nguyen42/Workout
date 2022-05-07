@@ -8,16 +8,22 @@
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/circular_progress_bar.xml" value="0.1375" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/circular_progress_bar_gray.xml" value="0.215" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/horizontal_divider.xml" value="0.1375" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/radio_rounded_selected.xml" value="0.1375" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/radio_rounded_selector.xml" value="0.1375" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/radio_rounded_text_color.xml" value="0.2665" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/rounded_indicator.xml" value="0.1375" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/rounded_indicator_gray.xml" value="0.1375" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/drawable/vertical_divider.xml" value="0.1375" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_bmiactivity.xml" value="0.31765711842667804" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_exercise.xml" value="0.25181159420289856" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_exercise_list.xml" value="0.33" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_finish.xml" value="0.38697916666666665" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_history.xml" value="0.1371640407784986" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/confirmation_dialog.xml" value="0.1380908248378128" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/exercise_indicator_item.xml" value="0.1380908248378128" />
         <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/exercise_list_item.xml" value="0.1712962962962963" />
+        <entry key="..\:/Practice/Android/workout_app/app/src/main/res/layout/history_list_item.xml" value="0.1380908248378128" />
       </map>
     </option>
   </component>
